@@ -2,7 +2,7 @@ import os
 import qrcode
 
 # Path to the folder where images are hosted in the repository
-image_folder = './photos'
+image_folder = './last_photo'
 
 # Path to the folder where QR codes will be saved
 qr_code_folder = './qr_images'
