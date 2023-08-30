@@ -18,7 +18,7 @@ for image_filename in os.listdir(image_folder):
             border=4,
         )
         # URL to the raw image file on GitHub
-        image_url = f'https://github.com/dantonycs/MirrorQR/blob/main/{image_folder}/{image_filename}'
+        image_url = f'https://github.com/dantonycs/MirrorQR/blob/main/{image_folder}/{image_filename}?raw=true'
         qr.add_data(image_url)
         qr.make(fit=True)
 
