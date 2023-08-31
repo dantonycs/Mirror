@@ -26,4 +26,4 @@ for image_filename in os.listdir(image_folder):
         qr_image = qr.make_image(fill_color="black", back_color="white")
 
         # Save the QR code image
-        qr_image.save(os.path.join(qr_code_folder, f'{image_filename}.png'))
+        qr_image.save(os.path.join(qr_code_folder, f'{image_filename}'))
