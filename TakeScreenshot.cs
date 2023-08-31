@@ -47,7 +47,7 @@ public class ScreenshotUploader : MonoBehaviour
         }}";
 
         UnityWebRequest upload_request = new UnityWebRequest(apiUrl, "PUT");
-        upload_request.SetRequestHeader("Authorization", "Bearer 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");
+        upload_request.SetRequestHeader("Authorization", "Bearer <token>");
         upload_request.uploadHandler = new UploadHandlerRaw(System.Text.Encoding.UTF8.GetBytes(jsonPayload));
         upload_request.downloadHandler = new DownloadHandlerBuffer();
         upload_request.SetRequestHeader("Content-Type", "application/json");
@@ -66,7 +66,7 @@ public class ScreenshotUploader : MonoBehaviour
 
         //Storing in all_screenshots folder
         UnityWebRequest upload_request_all = new UnityWebRequest(apiUrl_all, "PUT");
-        upload_request_all.SetRequestHeader("Authorization", "Bearer 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");
+        upload_request_all.SetRequestHeader("Authorization", "Bearer <token>");
         upload_request_all.uploadHandler = new UploadHandlerRaw(System.Text.Encoding.UTF8.GetBytes(jsonPayload));
         //upload_request_all.downloadHandler = new DownloadHandlerBuffer();
         upload_request_all.SetRequestHeader("Content-Type", "application/json");
